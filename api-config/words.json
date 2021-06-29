@@ -1,0 +1,85 @@
+{
+    "url": "https://wordsapiv1.p.rapidapi.com/words",
+    "mandatory-headers": {
+        "x-rapidapi-key": "6162fa4b00msh2bea0885eab67e0p1daca0jsnfdd514ce09d3",
+        "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*"
+    },
+    "endpoints": [
+        {
+            "type": "get",
+            "path": "/",
+            "op": "search",
+            "opt-params": [
+                "letterPattern",
+                "pronunciationpattern",
+                "partofspeech",
+                "lettersmin",
+                "letters",
+                "lettersMax",
+                "soundsmax",
+                "sounds",
+                "soundsMin",
+                "syllables",
+                "syllablesMin",
+                "syllablesMax",
+                "limit",
+                "page",
+                "frequencymin",
+                "frequencymax",
+                "hasDetails"
+            ]
+        },
+        {
+            "type": "get",
+            "path": "/?radom=true",
+            "op": "random"
+        },
+        {
+            "type": "get",
+            "path": "/frequency",
+            "op": "frequency"
+        },
+        {
+            "type": "get",
+            "path": "/$1/syllables",
+            "op": "syllables"
+        },
+        {
+            "type": "get",
+            "path": "/$1/pronunciation",
+            "op": "pronunciation"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/antonyms",
+            "op": "antonyms"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/rhymes",
+            "op": "rhymes"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/examples",
+            "op": "examples"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/definitions",
+            "op": "definitions"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/",
+            "op": "word"
+        },
+        {
+            "type": "get",
+            "path": "/{$1}/synonyms",
+            "op": "synonyms"
+        }
+    ]
+}
